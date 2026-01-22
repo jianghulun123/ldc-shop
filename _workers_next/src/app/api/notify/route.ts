@@ -4,9 +4,6 @@ import { md5 } from "@/lib/crypto";
 import { eq, sql } from "drizzle-orm";
 import { withOrderColumnFallback } from "@/lib/db/queries";
 
-export const runtime = 'nodejs';
-export const dynamic = 'force-dynamic';
-
 async function processNotify(params: Record<string, any>) {
     console.log("[Notify] Processing params:", JSON.stringify(params));
 
